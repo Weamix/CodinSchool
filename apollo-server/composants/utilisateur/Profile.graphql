@@ -1,15 +1,17 @@
+#import * from '../scalars/index.graphql'
+
 """
 Représente le profile d'un Utilisateur de CodinSchool.
 """
 type Profile {
 	id: ID!
-	dateInscription: String!
+	dateInscription: Date!
 
 	role: Role!
 
 	nom: String
 	prenom: String
-	dateNaissance: Int
+	dateNaissance: Date
 	adresse: String
 	codePostal: Int
 

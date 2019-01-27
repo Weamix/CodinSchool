@@ -1,4 +1,5 @@
 #import * from "./Profile.graphql"
+#import * from '../scalars/index.graphql'
 
 """
 Représente une demande d'inscription d'un Utilisateur.
@@ -9,7 +10,7 @@ input Inscription {
 
 	nom: String!
 	prenom: String!
-	dateNaissance: Int!
+	dateNaissance: Date!
 }
 
 """
@@ -21,7 +22,7 @@ input EditionUtilisateur {
 
 	nom: String
 	prenom: String
-	dateNaissance: Int
+	dateNaissance: Date
 	adresse: String
 	codePostal: Int
 

@@ -60,12 +60,12 @@ const Profile = bdd.define(
       }
     },
     dateNaissance: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.DATE,
       allowNull: false,
       validate: {
         datePassee(valeur) {
-          if (new Date(Date.parse(valeur)).getFullYear() >= new Date().getFullYear())
-            throw new Error('Date impossible')
+          if (valeur.getTime() >= new Date().getTime())
+            throw new Error('Impossible que la date de naissance soit future.')
         }
       }
     },
