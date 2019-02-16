@@ -101,8 +101,8 @@ export default {
     roles: Roles,
     permissions: {
       query: Permissions,
-      update({__type: { enumValues } }) {
-        return enumValues.map(x => x.name)
+      update() {
+        return [ 'GESTION_ROLE', 'GESTION_NIVEAU', 'GESTION_EXERCICE', 'GESTION_UTILISATEUR' ]
       }
     }
   },
