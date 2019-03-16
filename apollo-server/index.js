@@ -1,6 +1,6 @@
 import { ApolloServer } from 'apollo-server-express'
 
-import { MODE_DEVELOPPEMENT, ACTIVER_MOCKS } from './composants/config'
+import { MODE_DEVELOPPEMENT, ACTIVER_MOCKS, GRAPHQL_INTROSPECTION } from './composants/config'
 
 import context from './context.js'
 import dataSources from './data-sources.js'
@@ -15,6 +15,8 @@ export default new ApolloServer({
   subscriptions: false,
   cors: !MODE_DEVELOPPEMENT,
   debug: MODE_DEVELOPPEMENT,
+
+  introspection: GRAPHQL_INTROSPECTION,
 
   context,
   dataSources,

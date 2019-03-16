@@ -42,6 +42,10 @@ export const SERVIR_FICHIERS_STATIQUES = process.env.SERVIR_FICHIERS_STATIQUES
 // SERVEUR //
 export const SERVEUR_URL = process.env.SERVEUR_URL || `http://localhost:${PORT}`
 
+// GRAPHQL
+// FIXME : Activer dans tous les cas ?
+export const GRAPHQL_INTROSPECTION = MODE_DEVELOPPEMENT
+
 // SMTP (MAILS) //
 // NOTE : Mail désactivés si pas de serveur SMTP spécifié.
 export const SMTP_ACTIF = !!process.env.SMTP_HOTE
