@@ -13,7 +13,7 @@
       <p>
         <strong>Propriétaire</strong> : WARIN Bruno – – 29, avenue de Lattre de
         Tassigny 62200 Boulogne-sur-Mer<br />
-        <strong>Créateur</strong> : <a href="www.lprsc.fr">WARIN Bruno</a><br />
+        <strong>Créateur</strong> : <a href="http://www.lprsc.fr">WARIN Bruno</a><br />
         <strong>Responsable publication</strong> : WARIN Bruno – 0699711913<br />
         Le responsable publication est une personne physique ou une personne
         morale.<br />
